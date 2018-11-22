@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Köln Porz",
+      "address": "Bartholomäusstraße 30, 51145 Köln"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.090628,
+          50.883954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Arnsberg",
+      "address": "Niedereimerfeld 19B, 59823 Arnsberg"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.038678,
+          51.421298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Detmold",
+      "address": "Windmeierweg 8, 32758 Detmold"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.840916,
+          51.960995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Dortmund",
+      "address": "Niedersachsenweg 14, 44143 Dortmund"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.525666,
+          51.529034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Wuppertal",
+      "address": "Otto-Hahn-Straße 22, 42369 Wuppertal"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.215352,
+          51.233258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Übach-Palenberg",
+      "address": "Werkstraße 3, 52531 Übach-Palenberg"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.139102,
+          50.914934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Solingen",
+      "address": "Lüneschloßstraße 30, 42657 Solingen"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.084389,
+          51.163201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Siegen",
+      "address": "Numbachstraße 2, 57072 Siegen"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.002182,
+          50.883987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Oberhausen",
+      "address": "Brücktorstraße 38, 46047 Oberhausen"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.868617,
+          51.481345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Münster",
+      "address": "An den Speichern 3, 48157 Münster"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.634589,
+          51.995723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Jülich",
+      "address": "Rathausstraße 18, 52428 Jülich"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.324503,
+          50.92396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+	    "name": "Essen",
+      "address": "Rotthauser Str. 32, 45309 Essen"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.08147,
+          51.481795
+        ]
+      }
+    }
+  ]
+}

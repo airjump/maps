@@ -1,0 +1,62 @@
+
+
+<html>
+    <head>
+        <link rel='stylesheet' href='https://www.mapz.com/api/static/css/ol.css' />
+        <script src='https://www.mapz.com/api/static/javascript/lib/3.15.1/openlayers.js' type='text/javascript'></script>
+        
+        
+        <style>
+          .map {
+            height: 100%;
+            font-family: "HelveticaNeue", "Helvetica";
+          }
+        </style>
+    </head>
+    <body>
+        <div id="map" class="map"></div>
+        <script>
+          // Create background layer
+          var baseLayer = new ol.layer.Tile({
+          	source: new ol.source.XYZ({
+              attributions: [new ol.Attribution({
+                html: '© 2018 <a target="_blank" href="http://www.mapz.com">mapz.com </a>\
+                      - Map Data: <a target="_blank" href="http://openstreetmap.org" >OpenStreetMap</a>\
+                      (<a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">ODbL</a>)'
+              })],
+              tilePixelRatio: 2,
+              url:'https://tiles.mapz.com/mapproxy/v1/demo-817ca352/tiles/1.0.0/mapz_shades_of_gray_hq/EPSG3857/{z}/{x}/{-y}.jpeg'
+            })
+          });
+          
+          // Create vectorlayer and load GeoJSON file from mapz.com
+          var vectorLayer = new ol.layer.Vector({
+            source: new ol.source.Vector({
+              url: "https://www.mapz.com/api/static/data/mapz-example.geojson",
+              format: new ol.format.GeoJSON()
+            }),
+            style: function(feature) {
+              var featureStyle = new ol.mapz.style.FromGeoJSON(
+                feature, {
+                  baseIconUrl: 'https://www.mapz.com/map/marker/svg/'
+              });
+              return [featureStyle];
+            }
+          });
+          
+          var map = new ol.Map({
+            target: document.getElementById('map'),
+            logo: false,
+            layers: [
+              baseLayer,
+              vectorLayer // add the geojson layer to the map
+            ],
+            view: new ol.View({
+              center: ol.proj.transform([13.35320296,52.51372], 'EPSG:4326', 'EPSG:3857'),
+              zoom: 9
+            })
+          });
+        </script>
+    </body>
+</html>
+
