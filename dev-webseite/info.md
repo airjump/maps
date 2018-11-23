@@ -1,6 +1,6 @@
 # Auf dem Weg zum Ziel
 
-'''
+```
  <osm-script output="xml">
    
    
@@ -19,4 +19,4 @@
    <print mode="meta"/>
 
 </osm-script>
-'''
+```
