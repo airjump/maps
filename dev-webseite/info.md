@@ -24,3 +24,14 @@ https://overpass-turbo.eu/
 
 </osm-script>
 ```
+
+## Beispiel für das THW
+
+```xml
+(
+  way["operator"="Bundesanstalt Technisches Hilfswerk (THW)"];
+  >;
+  node["operator"="Bundesanstalt Technisches Hilfswerk (THW)"];
+);
+out skel;
+```
