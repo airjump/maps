@@ -4,7 +4,7 @@
 
 https://overpass-turbo.eu/
 
-```
+```xml
  <osm-script output="xml">
    
    
@@ -27,7 +27,7 @@ https://overpass-turbo.eu/
 
 ## Beispiel für das THW
 
-```xml
+```js
 (
   way["operator"="Bundesanstalt Technisches Hilfswerk (THW)"];
   >;
