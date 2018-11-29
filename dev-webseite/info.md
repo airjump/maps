@@ -35,3 +35,26 @@ https://overpass-turbo.eu/
 );
 out skel;
 ```
+
+## PLZ Suche
+
+```js
+/* Zeige alle Elemente innerhalb einer Grenzrelation mit postal_code=x,
+   welche ein Merkmal addr:postcode <> x haben */
+
+{{plz=53343}} 
+/* die PLZ hier beliebig ändern ... es muss allerdings die gültige PLZ
+   einer vorhandenen Grenzrelation sein */
+
+rel[postal_code="{{plz}}"];(._;>;);out;
+/* diese Zeile dient nur zur Visualisierung der hoffentlich vorhandenen
+   Grenzrelation ... ggf. auskommentieren oder löschen! */
+
+area[postal_code="{{plz}}"]->.a;
+(node(area.a)["addr:postcode"]["addr:postcode"!="{{plz}}"];
+ way(area.a)["addr:postcode"]["addr:postcode"!="{{plz}}"];)
+;(._;>;);out;
+/* ... oben auf Ausführen klicken (oder Strg-Enter), und ggf. in der
+   Karte mit Klick auf das Lupensymbol auf die hoffentlich erscheinenden
+   Daten zoomen lassen */
+   ```
